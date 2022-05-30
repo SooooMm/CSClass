@@ -49,6 +49,8 @@ namespace CSClass
             Console.WriteLine(Math.Min(52,273));
             Console.WriteLine(Math.Round(52.273));
             Console.WriteLine(Math.PI);
+
+            Product product = new Product();
         }
     }
 }
