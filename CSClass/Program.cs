@@ -15,16 +15,16 @@ namespace CSClass
             car.SetOutTime();
 
             Random random = new Random();
-            Console.WriteLine(random.Next(10,100));
-            Console.WriteLine(random.Next(10,100));
-            Console.WriteLine(random.Next(10,100));
-            Console.WriteLine(random.Next(10,100));
-            Console.WriteLine(random.Next(10,100));
+            Console.WriteLine(random.Next(10, 100));
+            Console.WriteLine(random.Next(10, 100));
+            Console.WriteLine(random.Next(10, 100));
+            Console.WriteLine(random.Next(10, 100));
+            Console.WriteLine(random.Next(10, 100));
 
             Console.WriteLine(random.NextDouble());
             Console.WriteLine(random.NextDouble());
             Console.WriteLine(random.NextDouble());
-            Console.WriteLine(random.NextDouble()*10);
+            Console.WriteLine(random.NextDouble() * 10);
 
 
             /*       List<int> list = new List<int>();
@@ -37,16 +37,16 @@ namespace CSClass
             list.Remove(273);
             list.RemoveAt(0);
 
-            foreach (var item in list) { 
-                Console.WriteLine("count : "+list.Count+"\t"+item);
+            foreach (var item in list) {
+                Console.WriteLine("count : " + list.Count + "\t" + item);
             }
 
 
             Console.WriteLine(Math.Abs(-2345));
             Console.WriteLine(Math.Ceiling(52.273));
             Console.WriteLine(Math.Floor(52.273));
-            Console.WriteLine(Math.Max(52,273));
-            Console.WriteLine(Math.Min(52,273));
+            Console.WriteLine(Math.Max(52, 273));
+            Console.WriteLine(Math.Min(52, 273));
             Console.WriteLine(Math.Round(52.273));
             Console.WriteLine(Math.PI);
 
@@ -58,13 +58,49 @@ namespace CSClass
              */
 
             Product productA = new Product() { name = "감자", price = 2000 };
-            Product productB = new Product() {  price = 2000, name = "감자" };
-            Product productC = new Product() { name = "감자"};
+            Product productB = new Product() { price = 2000, name = "감자" };
+            Product productC = new Product() { name = "감자" };
 
-            
+
             Console.WriteLine(productA);
             Console.WriteLine(productB);
             Console.WriteLine(productC);
+
+            List<Student> students = new List<Student>()
+            {
+            new Student() { name = "홍마마", grade = 98 },
+            new Student() { name = "가수연", grade = 23 },
+            new Student() { name = "김예수", grade = 33 },
+            new Student() { name = "이진수", grade = 80 },
+            new Student() { name = "개인기", grade = 3 },
+            new Student() { name = "나구연", grade = 40 },
+            new Student() { name = "남민기", grade = 68 },
+            new Student() { name = "행부부", grade = 73 },
+            new Student() { name = "민지킹", grade = 34 },
+            new Student() { name = "수쿠기", grade = 55 },
+            };
+
+            /*
+            foreach (var student in students)
+            {
+                if (student.grade > 60) {
+                    students.Remove(student);
+                }
+            }
+            */
+
+            for (int i = students.Count-1; i>=0  ; i--) 
+            {
+                if (students[i].grade > 60) { 
+                    students.RemoveAt(i);
+                }
+            }
+            foreach (var student in students)
+            { 
+                Console.WriteLine(student.ToString());
+            }
+           
+           
         }
     }
 }
