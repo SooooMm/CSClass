@@ -101,7 +101,15 @@ namespace CSClass
             }
            
             Console.WriteLine(MyMath.Abs(52));
-            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-52));
+            Console.WriteLine(MyMath.Abs(-52));
+
+            Product productX = new Product("감자", 2000);
+            Product productY = new Product("고구마", 3000);
+
+            Console.WriteLine(productX.ToString());
+            Console.WriteLine(productY.ToString());
+            Console.WriteLine(Product.counter + "개가 생성되었습니다.");
         }
     }
 }
