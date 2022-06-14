@@ -134,7 +134,14 @@ namespace CSClass
             Box box2 = new Box(-10, -20);
             Console.WriteLine(box2.Area);
 
-
+            //Finbonacci fibo = new Finbonacci();
+            Console.WriteLine(Finbonacci.Get(1));
+            Console.WriteLine(Finbonacci.Get(2));
+            Console.WriteLine(Finbonacci.Get(3));
+            Console.WriteLine(Finbonacci.Get(4));
+            Console.WriteLine(Finbonacci.Get(5));
+            Console.WriteLine(Finbonacci.Get(10));
+            Console.WriteLine(Finbonacci.Get(50));
         }
     }
 }
