@@ -142,6 +142,10 @@ namespace CSClass
             Console.WriteLine(Finbonacci.Get(5));
             Console.WriteLine(Finbonacci.Get(10));
             Console.WriteLine(Finbonacci.Get(50));
+
+
+            Cat cat = new Cat();
+            Dog dog = new Dog();
         }
     }
 }
