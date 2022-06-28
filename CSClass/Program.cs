@@ -144,8 +144,32 @@ namespace CSClass
             Console.WriteLine(Finbonacci.Get(50));
 
 
-            Cat cat = new Cat();
-            Dog dog = new Dog();
+            //Cat cat = new Cat();
+            //Dog dog = new Dog();
+
+            List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
+            List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
+            List<Animal> Animals = new List<Animal>() {
+                new Dog(), new Dog(), new Dog(),
+                new Cat(), new Cat(), new Cat() 
+            };
+            foreach (var item in Animals)
+            {
+                item.Eat();
+                item.Sleep();
+                if(item is Dog)((Dog)item).Bark(); //객체가 Dog이라면
+                if (item is Cat) ((Cat)item).Meow();
+                //item is Animal //Animal로써의 역할을 할 수 있는지
+
+                /*
+                var dog = item as Dog;
+                if (dog != null) { dog.Bark(); }
+
+                var cat = item as Cat;
+                if (cat != null) { cat.Meow(); }*/
+            }
+
+            
         }
     }
 }
