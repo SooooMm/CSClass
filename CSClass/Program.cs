@@ -161,12 +161,12 @@ namespace CSClass
                 if (item is Cat) ((Cat)item).Meow();
                 //item is Animal //Animal로써의 역할을 할 수 있는지
 
-                /*
+                
                 var dog = item as Dog;
                 if (dog != null) { dog.Bark(); }
 
                 var cat = item as Cat;
-                if (cat != null) { cat.Meow(); }*/
+                if (cat != null) { cat.Meow(); }
             }
 
             
