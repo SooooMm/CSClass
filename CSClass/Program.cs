@@ -134,6 +134,7 @@ namespace CSClass
             Box box2 = new Box(-10, -20);
             Console.WriteLine(box2.Area);
 
+            /*
             //Finbonacci fibo = new Finbonacci();
             Console.WriteLine(Finbonacci.Get(1));
             Console.WriteLine(Finbonacci.Get(2));
@@ -142,7 +143,7 @@ namespace CSClass
             Console.WriteLine(Finbonacci.Get(5));
             Console.WriteLine(Finbonacci.Get(10));
             Console.WriteLine(Finbonacci.Get(50));
-
+            */
 
             //Cat cat = new Cat();
             //Dog dog = new Dog();
@@ -169,7 +170,9 @@ namespace CSClass
                 if (cat != null) { cat.Meow(); }
             }
 
-            
+
+            Child ChildA = new Child();
+            Child ChildB = new Child("String");
         }
     }
 }

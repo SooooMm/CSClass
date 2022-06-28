@@ -50,6 +50,7 @@
     <Compile Include="Box.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Cat.cs" />
+    <Compile Include="Child.cs" />
     <Compile Include="Dictioniary.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Finbonacci.cs" />
@@ -60,6 +61,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="MyMath.cs" />
+    <Compile Include="Parent.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
